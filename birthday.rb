@@ -145,6 +145,7 @@ def write_yaml(io, rows)
   io.puts YAML.dump({
     'tables' => {
       'probs' => {
+        'css' => 'is-hoverable',
         'cols' => COLS,
         'rows' => rows.map { |row|
           if row[:elided]
